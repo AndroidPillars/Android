@@ -130,3 +130,77 @@ __Usage of Java super Keyword__
 - super can be used to refer immediate parent class instance variable.
 - super can be used to invoke immediate parent class method.
 - super() can be used to invoke immediate parent class constructor.
+
+# Inheritance
+
+- When the class is able to inherit the properties and methods from their parents.
+- In other words, Inheritance is a mechanism in which one class acquires the property of another class.
+
+__MyClass.java__
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        Microphone mMicrophone = new Microphone("Gauthy", "Blue", 555);
+
+        System.out.println(mMicrophone.mName + ", " + mMicrophone.mColor + ", " + mMicrophone.mModel);
+
+        mMicrophone.turnOn();
+        mMicrophone.setVolume();
+        mMicrophone.turnOff();
+        System.out.println(mMicrophone.showDescription());
+
+        MiniMicrophone mMiniMicrophone = new MiniMicrophone("Gauthy", "Blue", 555, "Honey-Well");
+        System.out.println(mMiniMicrophone.mManufacturingCompany);
+    }
+}
+```
+
+__Microphone.java__
+
+```ruby
+public class Microphone {
+
+    String mName;
+    String mColor;
+    int mModel;
+
+    public Microphone(String mName, String mColor, int mModel) {
+        this.mName = mName;
+        this.mColor = mColor;
+        this.mModel = mModel;
+    }
+
+    public void turnOn() {
+        System.out.println(this.mName + " Turn On");
+    }
+
+    public void turnOff() {
+        System.out.println(this.mName + " Turn Off");
+    }
+
+    public void setVolume() {
+        System.out.println(this.mName + " Set Volume");
+    }
+
+    public String showDescription() {
+        return "Microphone name " + this.mName + " with color: " + this.mColor
+                + " and its model " + this.mModel;
+    }
+
+}
+```
+
+__MiniMicrophone.java__
+
+```ruby
+public class MiniMicrophone extends Microphone {
+
+    String mManufacturingCompany;
+
+    public MiniMicrophone(String mName, String mColor, int mModel, String mManufacturingCompany) {
+        super(mName, mColor, mModel);
+        this.mManufacturingCompany = mManufacturingCompany;
+    }
+}
+```
+
