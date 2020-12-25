@@ -317,6 +317,23 @@ public class MyClass {
 }
 ```
 
+# Java Methods
+
+- A method is a block of code which only runs when it is called.
+- You can pass data, known as parameters, into a method.
+- Methods are used to perform certain actions, and they are also known as functions.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        init("Hello World");
+    }
+
+    private static void init(String mValue) {
+        System.out.println(mValue);
+    }
+}
+```
 
 # Points to get Remember
 
