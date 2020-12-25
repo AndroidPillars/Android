@@ -157,7 +157,7 @@ public class MyClass {
 }
 ```
 
-# Compiler
+# Java Compiler
 
 - Compiler is a internal java tool that checks for for errors, syntax.
 
@@ -234,7 +234,7 @@ public class MyClass {
 }
 ```
 
-# For-Loop
+# Java For-Loop
 
 - The Java for loop is used to iterate a part of the program several times.
 - where, int i= 0; is the Initialization,  i < 10; is the Condition and i++ increments the values
@@ -252,7 +252,7 @@ public class MyClass {
 }
 ```
 
-# Else if
+# Java Else if
 
 - The else if statement to specify a new condition if the first condition is false.
 
@@ -300,7 +300,7 @@ public class MyClass {
 }
 ```
 
-# Do/While
+# Java Do/While
 
 - This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
 
