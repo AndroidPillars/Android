@@ -129,7 +129,7 @@ public class MyClass {
     }
 }
 ```
-- char -> Sttring that holds only one character -> Holds 16 bits
+- char -> String that holds only one character -> Holds 16 bits
 
 ```ruby
 public class MyClass {
@@ -138,6 +138,21 @@ public class MyClass {
         char mName = 'G';
 
         System.out.println("I am " +mName);
+    }
+}
+```
+
+__Boolean__
+
+- A boolean will holds only one state at a time.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        boolean isTall = false;
+
+        System.out.println("I am " +isTall);
     }
 }
 ```
