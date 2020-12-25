@@ -43,12 +43,101 @@ public class MyClass {
 
 __Integer__
 
+- Integer is a type that hold whole numbers.
+- int has a certain capacity to hold the numbers.
+- int -> Holds 32 bits
+
 ```ruby
 public class MyClass {
     public static void main(String[] args) {
          int mAge = 23;
 
         System.out.println("I am " +mAge+ " Years old");
+    }
+}
+```
+
+__Long__
+
+- long -> Holds 64 bits
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+         long mAge = 2339483967888L;
+
+        System.out.println("I am " +mAge+ " Years old");
+    }
+}
+```
+
+__Float__
+
+- Decimal numbers -> Holds 32 bits
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+         float mAge = 2339483.967888f;
+
+        System.out.println("I am " +mAge+ " Years old");
+    }
+}
+```
+
+__double__
+
+- Float numbers -> Holds 64 bits
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+         double mAge = 2339483.967888;
+
+        System.out.println("I am " +mAge+ " Years old");
+    }
+}
+```
+
+__Types in Java - int, byte__
+
+- int -> A whole number holds 32 bits
+- byte -> Holds 8 bits -> We can set up to the maximum value only up to 127 and regarding negative value up to -128
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+         byte mAge = 127;
+
+        System.out.println("I am " +mAge+ " Years old");
+    }
+}
+```
+- short -> Holds 16 bits
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+         short mAge = 289;
+
+        System.out.println("I am " +mAge+ " Years old");
+    }
+}
+```
+- char -> Sttring that holds only one character -> Holds 16 bits
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        char mName = 'G';
+
+        System.out.println("I am " +mName);
     }
 }
 ```
