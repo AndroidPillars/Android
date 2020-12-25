@@ -72,6 +72,21 @@ public class MyClass {
 }
 ```
 
+__Double__
+
+- Float numbers -> Holds 64 bits
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+         double mAge = 2339483.967888;
+
+        System.out.println("I am " +mAge+ " Years old");
+    }
+}
+```
+
 __Float__
 
 - Decimal numbers -> Holds 32 bits
@@ -87,22 +102,22 @@ public class MyClass {
 }
 ```
 
-__double__
+__Boolean__
 
-- Float numbers -> Holds 64 bits
+- A boolean will holds only one state at a time.
 
 ```ruby
 public class MyClass {
     public static void main(String[] args) {
 
-         double mAge = 2339483.967888;
+        boolean isTall = false;
 
-        System.out.println("I am " +mAge+ " Years old");
+        System.out.println("I am " +isTall);
     }
 }
 ```
 
-__Types in Java - int, byte__
+# Types in Java - int, byte
 
 - int -> A whole number holds 32 bits
 - byte -> Holds 8 bits -> We can set up to the maximum value only up to 127 and regarding negative value up to -128
@@ -142,26 +157,13 @@ public class MyClass {
 }
 ```
 
-__Boolean__
-
-- A boolean will holds only one state at a time.
-
-```ruby
-public class MyClass {
-    public static void main(String[] args) {
-
-        boolean isTall = false;
-
-        System.out.println("I am " +isTall);
-    }
-}
-```
-
 # Compiler
 
 - Compiler is a internal java tool that checks for for errors, syntax.
 
 # Java Operators
+
+__Arithmetic Operators__
 
 -  + -> add , - -> Subtract , * -> Multiply , / -> Divide, % -> Remainder (or) Modular.
 
@@ -190,9 +192,9 @@ public class MyClass {
 }
 ```
 
-__Relational Operators and Logical Operators__
+__Relational Operators__
 
-- Relational Operators are operators that relates two variables (i.e.) operands.
+- Relational Operators are operators that relates two variables (i.e.) It is used to check the relationship between two operands
 - ==, !=, <, >, <=, >=
 
 ```ruby
@@ -211,8 +213,26 @@ public class MyClass {
 }
 ```
 
+__Logical Operators__
+
 - Logical operators are used to check whether an expression is true or false.
-- !
+- AND(&&), OR(||), NOT(!)
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        int age = 20;
+        boolean mCitizen = true;
+
+        if((age >= 20) && (mCitizen)) {
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
+    }
+}
+```
 
 
 # Points to get Remember
