@@ -300,6 +300,23 @@ public class MyClass {
 }
 ```
 
+# Do/While
+
+- This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        int i = 0;
+        do {
+            System.out.println("The Condition is printed" + i);
+            i++;
+        } while (i < 10);
+    }
+}
+```
+
 
 # Points to get Remember
 
