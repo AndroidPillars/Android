@@ -317,7 +317,7 @@ public class MyClass {
 }
 ```
 
-# Java Methods
+# Java Methods & Parameters
 
 - A method is a block of code which only runs when it is called.
 - You can pass data, known as parameters, into a method.
@@ -331,6 +331,24 @@ public class MyClass {
 
     private static void init(String mValue) {
         System.out.println(mValue);
+    }
+}
+```
+
+# Java Return Types in Methods
+
+- If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        int mResult = init(4,5);
+        System.out.println(mResult);
+    }
+
+    private static int init(int mValue1, int mValue2) {
+        int mFinalValue = mValue1 + mValue2;
+       return mFinalValue;
     }
 }
 ```
