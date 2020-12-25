@@ -161,7 +161,58 @@ public class MyClass {
 
 - Compiler is a internal java tool that checks for for errors, syntax.
 
-- Java Source File -> 
+# Java Operators
+
+-  + -> add , - -> Subtract , * -> Multiply , / -> Divide, % -> Remainder (or) Modular.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        int a = 20;
+        int b = 5;
+        double c = 21;
+        double d = 5;
+
+        int mSum = a + b;
+        int mSub = a - b;
+        int mMul = (int) (c * d);
+        double mDiv = c / d;
+        double mRemainder = c % d;
+
+        System.out.println(mSum);
+        System.out.println(mSub);
+        System.out.println(mMul);
+        System.out.println(mDiv);
+        System.out.println(mRemainder);
+
+    }
+}
+```
+
+__Relational Operators and Logical Operators__
+
+- Relational Operators are operators that relates two variables (i.e.) operands.
+- ==, !=, <, >, <=, >=
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        int a = 20;
+        int b = 5;
+
+        if(a == b) {
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
+    }
+}
+```
+
+- Logical operators are used to check whether an expression is true or false.
+- !
 
 
 # Points to get Remember
