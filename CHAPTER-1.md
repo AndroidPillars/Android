@@ -252,6 +252,54 @@ public class MyClass {
 }
 ```
 
+# Else if
+
+- The else if statement to specify a new condition if the first condition is false.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        int time = 22;
+        if (time < 10) {
+            System.out.println("Good morning.");
+        } else if (time < 20) {
+            System.out.println("Good day.");
+        } else {
+            System.out.println("Good evening.");
+        }
+    }
+}
+```
+
+# Java Switch
+
+- The switch statement to select one of many code blocks to be executed.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        String command = "Deposit";
+        int balance = 1000;
+        int amount = 100;
+
+        switch (command) {
+            case "Deposit":
+                balance = balance + amount;
+                break;
+            case "WithDraw":
+                balance = balance - amount;
+                break;
+            default:
+                System.out.println(balance);
+                break;
+        }
+        System.out.println(balance);
+    }
+}
+```
+
 
 # Points to get Remember
 
