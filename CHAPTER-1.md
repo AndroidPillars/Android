@@ -234,6 +234,24 @@ public class MyClass {
 }
 ```
 
+# For-Loop
+
+- The Java for loop is used to iterate a part of the program several times.
+- where, int i= 0; is the Initialization,  i < 10; is the Condition and i++ increments the values
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 10; i++) {
+            if (i % 4 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+```
+
 
 # Points to get Remember
 
