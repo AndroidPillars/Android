@@ -59,3 +59,64 @@ public class Microphone {
 
 }
 ```
+
+# Constructor
+
+- The Constructor is a method that add to our class which will allow us to construct the object.
+- In other words,The constructor is a block of codes similar to the method. 
+- It is called when an instance of the class is created. 
+- At the time of calling constructor, memory for the object is allocated in the memory.
+- It calls a default constructor if there is no constructor available in the class.
+
+__MyClass.java__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        Microphone mMicrophone = new Microphone("Gauthy", "Blue", 555);
+
+        System.out.println(mMicrophone.mName + ", " + mMicrophone.mColor + ", " + mMicrophone.mModel);
+
+        mMicrophone.turnOn();
+        mMicrophone.setVolume();
+        mMicrophone.turnOff();
+        System.out.println(mMicrophone.showDescription());
+
+    }
+}
+```
+
+__Microphone.java__
+
+```ruby
+public class Microphone {
+
+    String mName;
+    String mColor;
+    int mModel;
+
+    public Microphone(String mName, String mColor, int mModel) {
+        this.mName = mName;
+        this.mColor = mColor;
+        this.mModel = mModel;
+    }
+
+    public void turnOn() {
+        System.out.println(this.mName + " Turn On");
+    }
+
+    public void turnOff() {
+        System.out.println(this.mName + " Turn Off");
+    }
+
+    public void setVolume() {
+        System.out.println(this.mName + " Set Volume");
+    }
+
+    public String showDescription() {
+        return "Microphone name " + this.mName + " with color: " + this.mColor
+                + " and its model " + this.mModel;
+    }
+
+}
+```
