@@ -215,4 +215,66 @@ public class MiniMicrophone extends Microphone {
 - __Public:__ The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
 - There are many non-access modifiers, such as static, abstract, synchronized, native, volatile, transient, etc. 
 
+# Encapsulation
 
+- The whole idea behind encapsulation is to hide the implementation details from users. 
+- If a data member is private it means it can only be accessed within the same class. 
+- No outside class can access private data member (variable) of other class.
+- We can use setter and getter methods to set and get the data in it.
+
+__MyClass.java__
+```ruby
+package com.gowtham.myjava;
+
+public class MyClass {
+    public static void main(String[] args) {
+        Microphone mMicrophone = new Microphone("Gauthy", "Blue", 555);
+
+        mMicrophone.setmName("Gauthy");
+        mMicrophone.setmColor("Green");
+        mMicrophone.setmModel(987);
+        System.out.println(mMicrophone.getmName() + ", " + mMicrophone.getmColor() + ", " + mMicrophone.getmModel());
+    }
+}
+```
+
+__MiniMicrophone.java__
+
+```ruby
+public class Microphone {
+
+    private String mName;
+    private String mColor;
+    private int mModel;
+
+    public Microphone(String mName, String mColor, int mModel) {
+        this.mName = mName;
+        this.mColor = mColor;
+        this.mModel = mModel;
+    }
+
+    public String getmName() {
+        return mName;
+    }
+
+    public void setmName(String mName) {
+        this.mName = mName;
+    }
+
+    public String getmColor() {
+        return mColor;
+    }
+
+    public void setmColor(String mColor) {
+        this.mColor = mColor;
+    }
+
+    public int getmModel() {
+        return mModel;
+    }
+
+    public void setmModel(int mModel) {
+        this.mModel = mModel;
+    }
+}
+```
