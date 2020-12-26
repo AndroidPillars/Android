@@ -360,3 +360,4 @@ public class MyClass {
 # Tools References
 
 - https://www.material-theme.com/docs/getting-started/ [Android Studio Material Theme]
+- https://github.com/twitter-archive/commons/blob/master/src/java/com/twitter/common/styleguide.md#formatting [Java Style Guide]
