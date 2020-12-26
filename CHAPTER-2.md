@@ -206,5 +206,13 @@ public class MiniMicrophone extends Microphone {
 
 # Access Modifiers
 
-- 
+- Java access modifiers are used to provide access control in java.
+- An access modifier restricts the access of a class, constructor, data member and method in another class. 
+- Java provides access control through __default, private, protected and public__.
+- __Private:__ The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+- __Default:__ The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+- __Protected:__ The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
+- __Public:__ The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+- There are many non-access modifiers, such as static, abstract, synchronized, native, volatile, transient, etc. 
+
 
