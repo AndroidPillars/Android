@@ -140,17 +140,21 @@ __MyClass.java__
 ```ruby
 public class MyClass {
     public static void main(String[] args) {
+
         Microphone mMicrophone = new Microphone("Gauthy", "Blue", 555);
 
-        System.out.println(mMicrophone.mName + ", " + mMicrophone.mColor + ", " + mMicrophone.mModel);
+        mMicrophone.setmName("Gauthy");
+        mMicrophone.setmColor("Green");
+        mMicrophone.setmModel(987);
+        System.out.println(mMicrophone.getmName() + ", " + mMicrophone.getmColor() + ", " + mMicrophone.getmModel());
 
-        mMicrophone.turnOn();
-        mMicrophone.setVolume();
-        mMicrophone.turnOff();
-        System.out.println(mMicrophone.showDescription());
 
-        MiniMicrophone mMiniMicrophone = new MiniMicrophone("Gauthy", "Blue", 555, "Honey-Well");
-        System.out.println(mMiniMicrophone.mManufacturingCompany);
+        MiniMicrophone mMicroPhoneOne = new MiniMicrophone();
+        mMicroPhoneOne.setmName("GauthyOne");
+        mMicroPhoneOne.setmColor("Red");
+        mMicroPhoneOne.setmManufacturingCompany("ReddyDot");
+        System.out.println(mMicroPhoneOne.getmName() + ", " + mMicroPhoneOne.getmColor());
+
     }
 }
 ```
@@ -160,9 +164,13 @@ __Microphone.java__
 ```ruby
 public class Microphone {
 
-    String mName;
-    String mColor;
-    int mModel;
+    private String mName;
+    private String mColor;
+    private int mModel;
+
+    public Microphone() {
+
+    }
 
     public Microphone(String mName, String mColor, int mModel) {
         this.mName = mName;
@@ -170,23 +178,34 @@ public class Microphone {
         this.mModel = mModel;
     }
 
-    public void turnOn() {
-        System.out.println(this.mName + " Turn On");
+    public Microphone(String mName, String mColor) {
+        this.mName = mName;
+        this.mColor = mColor;
     }
 
-    public void turnOff() {
-        System.out.println(this.mName + " Turn Off");
+    public String getmName() {
+        return mName;
     }
 
-    public void setVolume() {
-        System.out.println(this.mName + " Set Volume");
+    public void setmName(String mName) {
+        this.mName = mName;
     }
 
-    public String showDescription() {
-        return "Microphone name " + this.mName + " with color: " + this.mColor
-                + " and its model " + this.mModel;
+    public String getmColor() {
+        return mColor;
     }
 
+    public void setmColor(String mColor) {
+        this.mColor = mColor;
+    }
+
+    public int getmModel() {
+        return mModel;
+    }
+
+    public void setmModel(int mModel) {
+        this.mModel = mModel;
+    }
 }
 ```
 
@@ -195,12 +214,16 @@ __MiniMicrophone.java__
 ```ruby
 public class MiniMicrophone extends Microphone {
 
-    String mManufacturingCompany;
+    private String mManufacturingCompany;
 
-    public MiniMicrophone(String mName, String mColor, int mModel, String mManufacturingCompany) {
-        super(mName, mColor, mModel);
+    public String getmManufacturingCompany() {
+        return mManufacturingCompany;
+    }
+
+    public void setmManufacturingCompany(String mManufacturingCompany) {
         this.mManufacturingCompany = mManufacturingCompany;
     }
+
 }
 ```
 
