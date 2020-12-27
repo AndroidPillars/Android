@@ -246,13 +246,14 @@ public class MiniMicrophone extends Microphone {
 - We can use setter and getter methods to set and get the data in it.
 
 __MyClass.java__
+
 ```ruby
 package com.gowtham.myjava;
 
 public class MyClass {
     public static void main(String[] args) {
+    
         Microphone mMicrophone = new Microphone("Gauthy", "Blue", 555);
-
         mMicrophone.setmName("Gauthy");
         mMicrophone.setmColor("Green");
         mMicrophone.setmModel(987);
@@ -314,8 +315,8 @@ __MyClass.java__
 ```ruby
 public class MyClass {
     public static void main(String[] args) {
+    
         Microphone mMicrophone = new Microphone("Gauthy", "Blue", 555);
-
         mMicrophone.setmName("Gauthy");
         mMicrophone.setmColor("Green");
         mMicrophone.setmModel(987);
@@ -392,7 +393,6 @@ public class MyClass {
     public static void main(String[] args) {
 
         Microphone mMicrophone = new Microphone("Gauthy", "Blue", 555);
-
         mMicrophone.setmName("Gauthy");
         mMicrophone.setmColor("Green");
         mMicrophone.setmModel(987);
@@ -492,3 +492,36 @@ public class HeadPhone extends MiniMicrophone {
     }
 }
 ```
+
+# String Override Method
+
+- A string representation of an object can be obtained using the toString() method in Java. 
+- This method is overridden so that the object values can be returned.
+
+__MyClass.java__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        Student mStudent = new Student(101, "Gauthy");
+        System.out.println(mStudent);
+    }
+
+```
+
+__Student.java__
+
+```ruby
+class Student {
+    private int mRNo;
+    private String mName;
+    public Student(int r, String n) {
+        mRNo = r;
+        mName = n;
+    }
+    public String toString() {
+        return mRNo + " " + mName;
+    }
+}
+```
+
