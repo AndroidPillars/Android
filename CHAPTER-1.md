@@ -607,6 +607,20 @@ public class MyClass {
 }
 ```
 
+# ArrayList vs HashMap
+
+__ArrayList__
+
+- Store one object.
+- Allows duplicates.
+- Use index number to access values.
+
+__HashMap__
+
+- Store two objects.
+- No duplicate keys allowed, only values.
+- Use object to access values.
+
 # Points to get Remember
 
 - File -> Power Save Mode -> To Disable the auto suggestions methods
