@@ -353,6 +353,115 @@ public class MyClass {
 }
 ```
 
+# Arrays
+
+- Ordered group of values or objects in an organized manner.
+- Everything starts with INDEX 0.
+- Array cannot have multiple different data types of List.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        int[] mArray = {123, 456, 789};
+        System.out.println(mArray[0]);
+
+        String[] mStringArray = {"abc", "def", "ghi"};
+        for (int i = 0; i < mStringArray.length; i++) {
+            System.out.println(mStringArray[i]);
+        }
+    }
+}
+```
+
+__Pre-Setting Array's Length__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        int[] mArray = new int[3];
+        mArray[0] = 1;
+        mArray[1] = 2;
+        mArray[2] = 3;
+
+        for (int i = 0; i < mArray.length; i++) {
+            System.out.println(mArray[i]);
+        }
+    }
+}
+```
+
+__ArrayLists__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        // ArrayList<String> mArrayList = new ArrayList<>();
+
+        ArrayList mArrayList = new ArrayList();
+        mArrayList.add(1);
+        mArrayList.add("Hello");
+        for (int i = 0; i < mArrayList.size(); i++) {
+            System.out.println(mArrayList.get(i));
+        }
+    }
+}
+```
+
+__Looping through ArrayList__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        ArrayList mArrayList = new ArrayList();
+        mArrayList.add("a");
+        mArrayList.add("b");
+        mArrayList.add("c");
+        mArrayList.add("d");
+        mArrayList.add("f");
+        for (int i = 0; i < mArrayList.size(); i++) {
+            System.out.println(mArrayList.get(i));
+        }
+
+        ArrayList<String> mArrayListTwo = new ArrayList<>();
+        mArrayListTwo.add("ab");
+        mArrayListTwo.add("bb");
+        mArrayListTwo.add("cb");
+        mArrayListTwo.add("db");
+        mArrayListTwo.add("fb");
+        for (String mArrayListValues : mArrayListTwo) {
+            System.out.println(mArrayListValues);
+        }
+    }
+}
+```
+
+# Passing Arrays as Method Parameter
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        int[] mArrList = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        multipliesOfThree(mArrList);
+    }
+
+    private static void multipliesOfThree(int[] mArrayList) {
+        if (mArrayList.length > 0) {
+            for (int mArray : mArrayList) {
+                if (mArray % 3 == 0) {
+                    System.out.println("Multiples of Three: " + mArray);
+                } else {
+                    System.out.println(mArray);
+                }
+            }
+        } else {
+            System.out.println("Array List is Empty");
+        }
+    }
+}
+```
+
 # Points to get Remember
 
 - File -> Power Save Mode -> To Disable the auto suggestions methods
