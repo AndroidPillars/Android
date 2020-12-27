@@ -462,6 +462,121 @@ public class MyClass {
 }
 ```
 
+# Passing Objects as Method Parameters
+
+__MyClass.java__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        Employer mBank = new Employer();
+
+        Employee gauthy = new Employee("Gauthy", "R", 1001, 1000);
+
+        Employee manu = new Employee("Manu", "N", 1002, 2000);
+
+        mBank.CalculateAnnualBonus(gauthy);
+        mBank.CalculateAnnualBonus(manu);
+
+        boolean mRelated = mBank.areRelated(gauthy, manu);
+        System.out.println(mRelated);
+
+        mBank.EmployeeDetails(gauthy);
+    }
+```
+
+__Employee.java__
+
+```ruby
+public class Employee {
+
+    private String mFirstName;
+    private String mSecondName;
+    private int mIDNumber;
+    private double mSalary;
+
+    public Employee(String mFirstName, String mSecondName, int mIDNumber, double mSalary) {
+        this.mFirstName = mFirstName;
+        this.mSecondName = mSecondName;
+        this.mIDNumber = mIDNumber;
+        this.mSalary = mSalary;
+    }
+
+    public String getmFirstName() {
+        return mFirstName;
+    }
+
+    public void setmFirstName(String mFirstName) {
+        this.mFirstName = mFirstName;
+    }
+
+    public String getmSecondName() {
+        return mSecondName;
+    }
+
+    public void setmSecondName(String mSecondName) {
+        this.mSecondName = mSecondName;
+    }
+
+    public int getmIDNumber() {
+        return mIDNumber;
+    }
+
+    public void setmIDNumber(int mIDNumber) {
+        this.mIDNumber = mIDNumber;
+    }
+
+    public double getmSalary() {
+        return mSalary;
+    }
+
+    public void setmSalary(double mSalary) {
+        this.mSalary = mSalary;
+    }
+}
+```
+
+__Employer.java__
+
+```ruby
+public class Employer {
+
+    private String mName;
+    private String mLocation;
+
+
+    public Employer(String mName, String mLocation) {
+        this.mName = mName;
+        this.mLocation = mLocation;
+    }
+
+    public Employer() {
+
+    }
+
+    public boolean areRelated(Employee employeeA, Employee employeeB) {
+        if (employeeA.getmSecondName() == employeeB.getmSecondName()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void CalculateAnnualBonus(Employee employee) {
+        double annualBonus = (employee.getmSalary() * 0.15) * 12;
+        System.out.println("Bonus Amt:" + annualBonus);
+    }
+
+    public void EmployeeDetails(Employee mEmployee) {
+        System.out.println("ID: " + mEmployee.getmIDNumber() +
+                ", Name: " + mEmployee.getmFirstName() +
+                mEmployee.getmSecondName() +
+                ", Salary: " + mEmployee.getmSalary());
+    }
+}
+```
+
 # Points to get Remember
 
 - File -> Power Save Mode -> To Disable the auto suggestions methods
