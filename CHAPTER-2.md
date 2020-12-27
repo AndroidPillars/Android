@@ -544,3 +544,20 @@ public class MyClass {
     }
 }
 ```
+
+__Pre-Setting Array's Length__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        int[] mArray = new int[3];
+        mArray[0] = 1;
+        mArray[1] = 2;
+        mArray[2] = 3;
+
+        for (int i = 0; i < mArray.length; i++) {
+            System.out.println(mArray[i]);
+        }
+    }
+}
+```
