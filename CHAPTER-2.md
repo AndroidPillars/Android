@@ -302,8 +302,9 @@ public class Microphone {
 }
 ```
 
-# Constructor Overloading
+# Method/Constructor Overloading
 
+- If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
 - Constructor overloading in Java is a technique of having more than one constructor with different parameter lists. 
 - They are arranged in a way that each constructor performs a different task. 
 - They are differentiated by the compiler by the number of parameters in the list and their types.
@@ -330,7 +331,7 @@ public class MyClass {
 }
 ```
 
-__MiniMicrophone.java__
+__Microphone.java__
 
 ```ruby
 public class Microphone {
@@ -380,4 +381,114 @@ public class Microphone {
 }
 ```
 
-- If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+# Method Overriding
+
+- If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+
+__MyClass.java__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        Microphone mMicrophone = new Microphone("Gauthy", "Blue", 555);
+
+        mMicrophone.setmName("Gauthy");
+        mMicrophone.setmColor("Green");
+        mMicrophone.setmModel(987);
+        System.out.println(mMicrophone.getmName() + ", " + mMicrophone.getmColor() + ", " + mMicrophone.getmModel());
+
+
+        MiniMicrophone mMicroPhoneOne = new MiniMicrophone();
+        mMicroPhoneOne.setmName("GauthyOne");
+        mMicroPhoneOne.setmColor("Red");
+        mMicroPhoneOne.setmManufacturingCompany("ReddyDot");
+        System.out.println(mMicroPhoneOne.getmName() + ", " + mMicroPhoneOne.getmColor());
+
+        HeadPhone mHeadPhone = new HeadPhone();
+        mHeadPhone.setmManufacturingCompany("ReddyDot");
+        System.out.println(mHeadPhone.getmManufacturingCompany());
+
+    }
+}
+```
+
+__Microphone.java__
+
+```ruby
+public class Microphone {
+
+    private String mName;
+    private String mColor;
+    private int mModel;
+
+    public Microphone() {
+
+    }
+
+    public Microphone(String mName, String mColor, int mModel) {
+        this.mName = mName;
+        this.mColor = mColor;
+        this.mModel = mModel;
+    }
+
+    public Microphone(String mName, String mColor) {
+        this.mName = mName;
+        this.mColor = mColor;
+    }
+
+    public String getmName() {
+        return mName;
+    }
+
+    public void setmName(String mName) {
+        this.mName = mName;
+    }
+
+    public String getmColor() {
+        return mColor;
+    }
+
+    public void setmColor(String mColor) {
+        this.mColor = mColor;
+    }
+
+    public int getmModel() {
+        return mModel;
+    }
+
+    public void setmModel(int mModel) {
+        this.mModel = mModel;
+    }
+}
+```
+
+__MiniMicrophone.java__
+
+```ruby
+public class MiniMicrophone extends Microphone {
+
+    private String mManufacturingCompany;
+
+    public String getmManufacturingCompany() {
+        return mManufacturingCompany;
+    }
+
+    public void setmManufacturingCompany(String mManufacturingCompany) {
+        this.mManufacturingCompany = mManufacturingCompany;
+    }
+
+}
+```
+
+__HeadPhone.java__
+
+```ruby
+public class HeadPhone extends MiniMicrophone {
+
+    @Override
+    public String getmManufacturingCompany() {
+        return super.getmManufacturingCompany() + "Hedge";
+    }
+}
+```
