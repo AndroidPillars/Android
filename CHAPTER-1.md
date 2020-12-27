@@ -621,6 +621,29 @@ __HashMap__
 - No duplicate keys allowed, only values.
 - Use object to access values.
 
+# Sorting Arrays
+
+- The sorting is a way to arrange elements of a list or array in a certain order. 
+- The order may be in ascending or descending order.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        int[] mArrays = {2, 3, 7, 5, 3, 9};
+
+        Arrays.sort(mArrays);
+
+        for (Integer mArrayValues : mArrays) {
+            System.out.println(mArrayValues);
+        }
+
+    }
+}
+```
+
+
+
 # Points to get Remember
 
 - File -> Power Save Mode -> To Disable the auto suggestions methods
