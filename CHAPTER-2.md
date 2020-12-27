@@ -561,3 +561,21 @@ public class MyClass {
     }
 }
 ```
+
+__ArrayLists__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        // ArrayList<String> mArrayList = new ArrayList<>();
+
+        ArrayList mArrayList = new ArrayList();
+        mArrayList.add(1);
+        mArrayList.add("Hello");
+        for (int i = 0; i < mArrayList.size(); i++) {
+            System.out.println(mArrayList.get(i));
+        }
+    }
+}
+```
