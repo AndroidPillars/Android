@@ -437,7 +437,7 @@ public class MyClass {
 }
 ```
 
-# Passing Arrays as Method Parameter
+__Passing Arrays as Method Parameter__
 
 ```ruby
 public class MyClass {
@@ -462,7 +462,7 @@ public class MyClass {
 }
 ```
 
-# Passing Objects as Method Parameters
+__Passing Objects as Method Parameters__
 
 __MyClass.java__
 
