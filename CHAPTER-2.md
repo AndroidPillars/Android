@@ -302,9 +302,11 @@ public class Microphone {
 }
 ```
 
-# Method Overloading
+# Constructor Overloading
 
-- If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+- Constructor overloading in Java is a technique of having more than one constructor with different parameter lists. 
+- They are arranged in a way that each constructor performs a different task. 
+- They are differentiated by the compiler by the number of parameters in the list and their types.
 
 __MyClass.java__
 
@@ -377,3 +379,5 @@ public class Microphone {
     }
 }
 ```
+
+- If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
