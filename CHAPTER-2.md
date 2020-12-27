@@ -530,3 +530,17 @@ class Student {
 - Ordered group of values or objects in an organized manner.
 - Everything starts with INDEX 0.
 - Array cannot have multiple different data types of List.
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        int[] mArray = {123, 456, 789};
+        System.out.println(mArray[0]);
+
+        String[] mStringArray = {"abc", "def", "ghi"};
+        for (int i = 0; i < mStringArray.length; i++) {
+            System.out.println(mStringArray[i]);
+        }
+    }
+}
+```
