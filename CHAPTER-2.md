@@ -261,7 +261,7 @@ public class MyClass {
 }
 ```
 
-__MiniMicrophone.java__
+__Microphone.java__
 
 ```ruby
 public class Microphone {
