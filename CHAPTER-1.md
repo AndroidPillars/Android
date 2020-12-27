@@ -577,6 +577,36 @@ public class Employer {
 }
 ```
 
+# Java Hashmap
+
+- Storing Key-Value pairs in Java (i.e.) <Key, Value>
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+        HashMap<String, Integer> mHashMap = new HashMap<>();
+        mHashMap.put("Gauthy", 1001);
+        mHashMap.put("Manu", 1002);
+        mHashMap.put("Emoji", 1003);
+
+        System.out.println(mHashMap.get("Gauthy"));
+
+        for (String mValues : mHashMap.keySet()) {
+            System.out.println(mValues);
+        }
+
+        for (Integer mIntValues : mHashMap.values()) {
+            System.out.println(mIntValues);
+        }
+
+        for (String mValues : mHashMap.keySet()) {
+            System.out.println("Key: " + mValues + ", Values: " + mHashMap.get(mValues));
+        }
+
+    }
+}
+```
+
 # Points to get Remember
 
 - File -> Power Save Mode -> To Disable the auto suggestions methods
