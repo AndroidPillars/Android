@@ -515,9 +515,9 @@ __Student.java__
 class Student {
     private int mRNo;
     private String mName;
-    public Student(int r, String n) {
-        mRNo = r;
-        mName = n;
+    public Student(int rNo, String name) {
+        mRNo = rNo;
+        mName = name;
     }
     public String toString() {
         return mRNo + " " + mName;
@@ -525,3 +525,8 @@ class Student {
 }
 ```
 
+# Arrays
+
+- Ordered group of values or objects in an organized manner.
+- Everything starts with INDEX 0.
+- Array cannot have multiple different data types of List.
