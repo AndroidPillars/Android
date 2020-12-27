@@ -579,3 +579,32 @@ public class MyClass {
     }
 }
 ```
+
+__Looping through ArrayList__
+
+```ruby
+public class MyClass {
+    public static void main(String[] args) {
+
+        ArrayList mArrayList = new ArrayList();
+        mArrayList.add("a");
+        mArrayList.add("b");
+        mArrayList.add("c");
+        mArrayList.add("d");
+        mArrayList.add("f");
+        for (int i = 0; i < mArrayList.size(); i++) {
+            System.out.println(mArrayList.get(i));
+        }
+
+        ArrayList<String> mArrayListTwo = new ArrayList<>();
+        mArrayListTwo.add("ab");
+        mArrayListTwo.add("bb");
+        mArrayListTwo.add("cb");
+        mArrayListTwo.add("db");
+        mArrayListTwo.add("fb");
+        for (String mArrayListValues : mArrayListTwo) {
+            System.out.println(mArrayListValues);
+        }
+    }
+}
+```
