@@ -49,6 +49,14 @@ buttonSum.setOnClickListener(new View.OnClickListener() {
         });  
 ```
 
+Or
+
 ```ruby
-<Button  android:onClick="methodName"/>  
+<Button  android:onClick="searchClose"/>  
 ````
+
+```ruby
+public void searchClose(View view) {
+     Toast.makeText(getApplicationContext(),"Button Clicked!!!", Toast.LENGTH_LONG).show();  
+    }
+```
