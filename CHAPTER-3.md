@@ -50,7 +50,5 @@ buttonSum.setOnClickListener(new View.OnClickListener() {
 ```
 
 ```ruby
-<Button  
-        android:onClick="methodName"  
-/>  
+<Button  android:onClick="methodName"/>  
 ````
