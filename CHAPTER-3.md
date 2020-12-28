@@ -60,3 +60,8 @@ public void searchClose(View view) {
      Toast.makeText(getApplicationContext(),"Button Clicked!!!", Toast.LENGTH_LONG).show();  
     }
 ```
+
+# Android Manifest
+
+- The AndroidManifest.xml file contains information of your package, including components of the application such as activities, services, broadcast receivers, content providers etc.
+- It is responsible to protect the application to access any protected parts by providing the permissions.
