@@ -574,3 +574,33 @@ abstract class Animal{
 }
 ```
 
+# Interface
+
+- An interface in Java is a blueprint of a class.
+- The interface in Java is a mechanism to achieve abstraction. 
+- It is used to achieve abstraction and multiple inheritance in Java.
+- In other words, you can say that interfaces can have abstract methods and variables.
+
+__Demo.java__
+
+```ruby
+interface MyInterface{
+   public void method1();
+   public void method2();
+}
+class Demo implements MyInterface{
+
+   public void method1(){
+	System.out.println("implementation of method1");
+   }
+   
+   public void method2(){
+	System.out.println("implementation of method2");
+   }
+   
+   public static void main(String arg[]){
+	MyInterface obj = new Demo();
+	obj.method1();
+   }
+}
+```
