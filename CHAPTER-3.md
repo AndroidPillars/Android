@@ -27,7 +27,7 @@
 
 # Android Widgets
 
-# Toast
+__Toast__
 
 - The toast contains message to be displayed quickly and disappears after sometime.
 - Toast class is used to show notification for a particular interval of time. 
@@ -37,3 +37,20 @@
 ```ruby
 Toast.makeText(getApplicationContext(),"Hello AndroidPillars",Toast.LENGTH_SHORT).show();  
 ```
+
+__Button__
+
+```ruby
+buttonSum.setOnClickListener(new View.OnClickListener() {  
+            @Override  
+            public void onClick(View view) {  
+                Toast.makeText(getApplicationContext(),"Button Clicked!!!", Toast.LENGTH_LONG).show();  
+            }  
+        });  
+```
+
+```ruby
+<Button  
+        android:onClick="methodName"  
+/>  
+````
