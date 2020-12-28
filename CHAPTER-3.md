@@ -24,3 +24,16 @@
     - All applications such as home, contact, settings, games, browsers are using android framework that uses android runtime and libraries. 
     - Android runtime and native libraries are using linux kernal.  
 - Image Link: https://developer.android.com/guide/platform/images/android-stack_2x.png
+
+# Android Widgets
+
+# Toast
+
+- The toast contains message to be displayed quickly and disappears after sometime.
+- Toast class is used to show notification for a particular interval of time. 
+- After sometime it disappears. 
+- It doesn't block the user interaction.
+
+```ruby
+Toast.makeText(getApplicationContext(),"Hello AndroidPillars",Toast.LENGTH_SHORT).show();  
+```
