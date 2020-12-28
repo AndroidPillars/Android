@@ -5,16 +5,18 @@
 # Android Architecture
 
 - It is categorized into five parts:
-  1. linux kernel - Linux kernel is responsible for device drivers, power management, memory management, device management and resource access.
-  2. native libraries (middleware) - The WebKit library is responsible for browser support, SQLite is for database, Media for playing and recording audio and video formats.
-  3. Android Runtime 
+     __linux kernel__
+     - Linux kernel is responsible for device drivers, power management, memory management, device management and resource access.
+     __native libraries (middleware)__
+     - The WebKit library is responsible for browser support, SQLite is for database, Media for playing and recording audio and video formats.
+     __Android Runtime__
     - In android runtime, there are core libraries and DVM (Dalvik Virtual Machine) which is responsible to run android application. 
     - DVM is like JVM but it is optimized for mobile devices. 
     - It consumes less memory and provides fast performance.
-  4. Application Framework
+     __Application Framework__
     - Android framework includes Android API's such as UI (User Interface), telephony, resources, locations, Content Providers (data) and package managers. 
     - It provides a lot of classes and interfaces for android application development.
-  5. Applications
+     __Applications__
     - All applications such as home, contact, settings, games, browsers are using android framework that uses android runtime and libraries. 
     - Android runtime and native libraries are using linux kernal.
 - Image Link: https://developer.android.com/guide/platform/images/android-stack_2x.png
