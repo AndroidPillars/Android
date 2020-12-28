@@ -538,6 +538,10 @@ class Student {
 }
 ```
 
+# Interfaces and Abstract Classes
+
+- Interfaces and abstract classes that will help us to inherit or implement those functionalities that within unrelated classes.
+
 # Java Abstraction
 
 - A class which is declared with the abstract keyword is known as an abstract class in Java. 
@@ -546,3 +550,6 @@ class Student {
 - There are two ways to achieve abstraction in java
     1. Abstract class (0 to 100%)
     2. Interface (100%)
+
+
+
