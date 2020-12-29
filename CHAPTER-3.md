@@ -65,3 +65,39 @@ public void searchClose(View view) {
 
 - The AndroidManifest.xml file contains information of your package, including components of the application such as activities, services, broadcast receivers, content providers etc.
 - It is responsible to protect the application to access any protected parts by providing the permissions.
+
+# Android Activity LifeCycle
+
+
+# Intents
+
+- Android Intent is the message that is passed between components such as activities, content providers, broadcast receivers, services etc.
+- It is generally used with startActivity() method to invoke activity, broadcast receivers etc.
+- Two Types -> implicit and explicit.
+
+__Implicit Intent__
+
+- Implicit Intent doesn't specifiy the component.
+- In such case, intent provides information of available components provided by the system that is to be invoked.
+
+```ruby
+Intent intent=new Intent(Intent.ACTION_VIEW);  
+intent.setData(Uri.parse("http://www.google.com"));  
+startActivity(intent);  
+```
+
+__Explicit Intent__
+
+- Explicit Intent specifies the component. 
+- In such case, intent provides the external class to be invoked.
+
+```ruby
+Intent i = new Intent(getApplicationContext(), ActivityTwo.class);  
+startActivity(i);  
+```
+
+or
+
+```ruby
+startActivity(new Intent(getApplicationContext(), ActivityTwo.class));
+```
