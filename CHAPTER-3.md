@@ -96,13 +96,13 @@ Intent i = new Intent(getApplicationContext(), ActivityTwo.class);
 startActivity(i);  
 ```
 
-or
+__or__
 
 ```ruby
 startActivity(new Intent(getApplicationContext(), ActivityTwo.class));
 ```
 
-__Passing and Getting Values in Intent__
+__Passing the Values in Intent__
 
 ```ruby
 Intent i = new Intent(getApplicationContext(), ActivityTwo.class);
@@ -110,6 +110,18 @@ i.putExtra("keyValue", "Hello World");
 startActivity(i); 
 ```
 
+__Getting the Values in Intent__
+
 ```ruby
 String mStringValue = getIntent().getStringExtra("keyValue");
+```
+
+__or__
+
+```ruby
+Bundle extras = getIntent().getExtras();
+        
+if(extras != null){
+   String mStringValue = extras.getString("keyValue");
+}
 ```
