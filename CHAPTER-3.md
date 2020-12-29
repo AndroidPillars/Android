@@ -101,3 +101,15 @@ or
 ```ruby
 startActivity(new Intent(getApplicationContext(), ActivityTwo.class));
 ```
+
+__Passing and Getting Values in Intent__
+
+```ruby
+Intent i = new Intent(getApplicationContext(), ActivityTwo.class);
+i.putExtra("keyValue", "Hello World");
+startActivity(i); 
+```
+
+```ruby
+String mStringValue = getIntent().getStringExtra("keyValue");
+```
