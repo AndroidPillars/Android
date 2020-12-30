@@ -125,3 +125,40 @@ if(extras != null){
    String mStringValue = extras.getString("keyValue");
 }
 ```
+
+__Using onActivityResult__
+
+```ruby
+private final int REQUEST_CODE = 2;
+
+Intent intent = new Intent(getApplicationContext(), ActivityTwo.class);
+intent.putExtra("keyValue", "Hello World");
+startActivityForResult(intent, REQUEST_CODE);
+
+@Override
+protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+   super.onActivityResult(requestCode, resultCode, data);
+
+   if (requestCode == REQUEST_CODE) {
+        if (resultCode == RESULT_OK) {
+           assert data != null;
+            String message = data.getStringExtra("message_back");
+
+             Toast.makeText(MainActivity.this, message,
+                        Toast.LENGTH_LONG)
+                        .show();
+       }
+    }
+ }
+```
+
+```ruby
+@Override
+public void onBackPressed() {
+  super.onBackPressed();
+  Intent intent = getIntent();
+  intent.putExtra("message_back", "From Second Activity");
+  setResult(RESULT_OK, intent);
+  finish();
+}
+```
