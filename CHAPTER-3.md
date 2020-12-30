@@ -172,3 +172,13 @@ public void onBackPressed() {
   finish();
 }
 ```
+
+# API (Application Programming Interface)
+
+- It is a software interface that allows two applications to interact with each other without any user intervention.
+
+__Example__
+
+- When you use an application on your mobile phone, the application connects to the Internet and sends data to a server.
+- The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone. 
+- The application then interprets that data and presents you with the information you wanted in a readable way.
