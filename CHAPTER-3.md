@@ -70,13 +70,13 @@ public void searchClose(View view) {
 
 - An activity represents a single screen with a user interface just like window or frame of Java.
 - Android activity is the subclass of ContextThemeWrapper class.
-- onCreate -> 	called when activity is first created.
-- onStart -> called when activity is becoming visible to the user.
-- onResume -> 	called when activity will start interacting with the user.
-- onPause -> called when activity is not visible to the user.
-- onStop -> called when activity is no longer visible to the user.
-- onRestart -> called after your activity is stopped, prior to start.
-- onDestroy -> called before the activity is destroyed.
+     - onCreate -> 	called when activity is first created.
+     - onStart -> called when activity is becoming visible to the user.
+     - onResume -> 	called when activity will start interacting with the user.
+     - onPause -> called when activity is not visible to the user.
+     - onStop -> called when activity is no longer visible to the user.
+     - onRestart -> called after your activity is stopped, prior to start.
+     - onDestroy -> called before the activity is destroyed.
 - Image Link: https://developer.android.com/images/activity_lifecycle.png
 
 # Intents
