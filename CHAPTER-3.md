@@ -182,3 +182,16 @@ __Example__
 - When you use an application on your mobile phone, the application connects to the Internet and sends data to a server.
 - The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone. 
 - The application then interprets that data and presents you with the information you wanted in a readable way.
+
+# Singleton
+
+- Ensures a class has only one instance, and provide a global point of access it.
+- Some times we need only one instances of an Object.
+
+__Advantages__
+
+- Saves memory because object is not created at each request. Only single instance is reused again and again.
+
+__Usage of Singleton design pattern__
+
+- Singleton pattern is mostly used in multi-threaded and database applications. It is used in logging, caching, thread pools, configuration settings etc.
