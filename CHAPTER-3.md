@@ -195,3 +195,15 @@ __Advantages__
 __Usage of Singleton design pattern__
 
 - Singleton pattern is mostly used in multi-threaded and database applications. It is used in logging, caching, thread pools, configuration settings etc.
+
+# Animation
+
+- Animation is the process of creating motion and shape change.
+
+```ruby
+Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.myanimation);
+```
+
+# Running App on a Physical Device
+
+- Refer, https://github.com/AndroidPillars/Flutter/blob/master/CHAPTER-2.md#running-app-on-a-physical-device
