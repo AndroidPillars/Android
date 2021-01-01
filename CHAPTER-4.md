@@ -24,3 +24,7 @@ __Getting the Value__
 SharedPreferences getSharedPrefs = getSharedPreferences(MESSAGE_ID, MODE_PRIVATE);
 String value = getSharedPrefs.getString("message", "nothing");
 ```
+
+# Database - SQLite
+
+- Database is a structured way of organising data(rows and coulumns) and also it allows to retrive data quicker and more efficient.
