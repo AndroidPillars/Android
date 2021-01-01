@@ -28,3 +28,6 @@ String value = getSharedPrefs.getString("message", "nothing");
 # Database - SQLite
 
 - Database is a structured way of organising data(rows and coulumns) and also it allows to retrive data quicker and more efficient.
+- SQLite is an open-source relational database i.e. used to perform database operations on android devices such as storing, manipulating or retrieving persistent data from the database.
+- It is embedded in android bydefault.
+- SQLiteOpenHelper class provides the functionality to use the SQLite database.
