@@ -234,6 +234,15 @@ public class MyClass {
 }
 ```
 
+__Ternary Operator__
+
+- A ternary operator evaluates the test condition and executes a block of code based on the result of the condition.
+
+```ruby
+condition ? expression1 : expression2;
+```
+- Here, if condition is true, expression1 is executed and if condition is false, expression2 is executed.
+
 # Java For-Loop
 
 - The Java for loop is used to iterate a part of the program several times.
