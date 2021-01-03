@@ -1,3 +1,7 @@
+# Oops
+
+- Object-Oriented Programming is a methodology of designing a program using classes, objects, inheritance, polymorphism, abstraction, and encapsulation.
+
 # Classes and Objects
 
 - A template (blueprint) for creating objects (the real thing).
